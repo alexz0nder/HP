@@ -15,4 +15,4 @@ eth0_fw=`sudo ethtool -i ${eth0} | grep firmware | sed 's/firmware-version: //'`
 eth1_fw=`sudo ethtool -i ${eth1} | grep firmware | sed 's/firmware-version: //'`
 eth2_fw=`sudo ethtool -i ${eth2} | grep firmware | sed 's/firmware-version: //'`
 eth3_fw=`sudo ethtool -i ${eth3} | grep firmware | sed 's/firmware-version: //'`
-echo "${node_name}, ${bios_version}, ${bios_release_date}, ${hdd_controller_firmware}, ${eth0}, ${eth0_fw}, ${eth1}, ${eth1_fw}, ${eth2}, ${eth2_fw}, ${eth3}, ${eth3_fw}" > firmware_versions.csv
+echo "${node_name}, ${bios_version}, ${bios_release_date}, ${hdd_controller_firmware}, ${eth0}, ${eth0_fw}, ${eth1}, ${eth1_fw}, ${eth2}, ${eth2_fw}, ${eth3}, ${eth3_fw}"
